@@ -1,7 +1,7 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Clase Principal contiene el metodo inicio
+ *
+ * 
  */
 package com.mycompany.letraquenoserepite;
 import java.util.ArrayList;
@@ -9,13 +9,25 @@ import java.util.Scanner;
 import java.util.Vector;
 /**
  *
- * @author SuperUs
+ * @author Victor Preciado
+ * @author Edward Ramos
  */
 public class Principal {
-    
+         /**
+          * sc : Variable que instancea Scanner para poder capturar datos por consola
+          */
         Scanner sc = new Scanner(System.in);
+        /**
+          * cadena : Variable que captura la cadena que el usuario digita
+          */
         private String cadena;
+        /**
+          * caracter : Variable que va a tener la cadena en forma de array
+          */
         private char[] caracter;
+        /**
+          * vector : variable con la cual se compara por si acaso una letra aparece repetida despues
+          */
         Vector<Character> vector = new Vector<Character>();
         
         public char[] getCaracter() {
