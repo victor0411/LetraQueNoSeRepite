@@ -62,7 +62,8 @@ public class Principal {
         char norepi;
         cadena = sc.nextLine();
         caracter = cadena.toCharArray();
-        
+        bucle1:
+        for(int i=0;i<caracter.length;i++){
         
          if(i>=caracter.length)
                 break bucle1;
@@ -76,7 +77,9 @@ public class Principal {
             }
     
     }
-    
     }
+}
+    
+    
     
 
