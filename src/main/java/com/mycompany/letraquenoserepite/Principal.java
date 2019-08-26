@@ -75,7 +75,8 @@ public class Principal {
                         break bucle1;
                 }
             }
-            
+            norepite=caracter[i];
+            bucle3:
             for(int j=y;j<caracter.length;j++){
                 System.out.println("* Leyendo " + caracter[j]);
                 System.out.println("- La primera que no se repites es: " + norepite);
