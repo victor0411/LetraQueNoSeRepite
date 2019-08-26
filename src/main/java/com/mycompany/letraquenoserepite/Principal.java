@@ -58,8 +58,8 @@ public class Principal {
     
     public void inicio(){
         System.out.println("Ingrese la cadena: ");
-        int lengarray, y = 1;
-        char norepi;
+        int tamanoarray, y = 1;
+        char norepite;
         cadena = sc.nextLine();
         caracter = cadena.toCharArray();
         bucle1:
@@ -67,13 +67,25 @@ public class Principal {
         
          if(i>=caracter.length)
                 break bucle1;
-            lengarray = vector.size();
-            for(int k=0; k<lengarray;k++){                               
+            tamanoarray = vector.size();
+            for(int k=0; k<tamanoarray;k++){                               
                 while(caracter[i]==vector.get(k)){
                     i++;
                     if(i>=caracter.length)
                         break bucle1;
                 }
+            }
+            
+            for(int j=y;j<caracter.length;j++){
+                System.out.println("* Leyendo " + caracter[j]);
+                System.out.println("- La primera que no se repites es: " + norepite);
+                if(caracter[i]==caracter[j]){
+                    y=j+1;
+                    vector.add(caracter[i]);
+                    break bucle3;
+                }
+                if(j >= (caracter.length)-1 )
+                    break bucle1;    
             }
     
     }
