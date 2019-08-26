@@ -13,17 +13,14 @@ import java.util.Vector;
  */
 public class Principal {
     
-    
-    public void inicio(){
-    
         Scanner sc = new Scanner(System.in);
         private String cadena;
         private char[] caracter;
         Vector<Character> vector = new Vector<Character>();
         
-         public char[] getCaracter() {
+        public char[] getCaracter() {
         return caracter;
-    }
+        }
 
     public void setCaracter(char[] caracter) {
         this.caracter = caracter;
@@ -46,6 +43,12 @@ public class Principal {
     public void setSc(Scanner sc) {
         this.sc = sc;
     }
+    
+    public void inicio(){
+    
+    
     }
     
-}
+    }
+    
+
