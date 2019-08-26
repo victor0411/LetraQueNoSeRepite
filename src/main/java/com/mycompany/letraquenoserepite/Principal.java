@@ -13,48 +13,76 @@ import java.util.Vector;
  * @author Edward Ramos
  */
 public class Principal {
-         /**
-          * sc : Variable que instancea Scanner para poder capturar datos por consola
-          */
-        Scanner sc = new Scanner(System.in);
-        /**
-          * cadena : Variable que captura la cadena que el usuario digita
-          */
-        private String cadena;
-        /**
-          * caracter : Variable que va a tener la cadena en forma de array
-          */
-        private char[] caracter;
-        /**
-          * vector : variable con la cual se compara por si acaso una letra aparece repetida despues
-          */
-        Vector<Character> vector = new Vector<Character>();
+    /**
+     * sc : Variable que instancea Scanner para poder capturar datos por consola
+     */
+   Scanner sc = new Scanner(System.in);
+   /**
+     * cadena : Variable que captura la cadena que el usuario digita
+     */
+   private String cadena;
+   /**
+     * caracter : Variable que va a tener la cadena en forma de array
+     */
+   private char[] caracter;
+   /**
+     * vector : variable con la cual se compara por si acaso una letra aparece repetida despues
+     */
+   Vector<Character> vector = new Vector<Character>();
         
+        /**
+         *  get de la variable caracter
+         * @return caracter
+         */
         public char[] getCaracter() {
-        return caracter;
+            return caracter;
         }
 
-    public void setCaracter(char[] caracter) {
-        this.caracter = caracter;
-    }
+        /**
+         * set de la variable caracter
+         * @param caracter 
+         */
+        public void setCaracter(char[] caracter) {
+            this.caracter = caracter;
+        }
+        /**
+         * get de la variable cadena
+         * @return cadena
+         */
+        public String getCadena() {
+            return cadena;
+        }
 
-    public String getCadena() {
-        return cadena;
-    }
-   
-    
-    public String setCadena() {
-        return cadena;
-    }
-    
-    public Scanner getSc() {
-        return sc;
-    }
+        /**
+         * set de la Varibale cadena
+         * @return cadena
+         */
+        public String setCadena() {
+            return cadena;
+        }
 
-   
-    public void setSc(Scanner sc) {
-        this.sc = sc;
-    }
+        /**
+         * get de la variable sc
+         * @return sc
+         */
+        public Scanner getSc() {
+            return sc;
+        }
+
+        /**
+         * set de la variable sc
+         * @param sc 
+         */
+        public void setSc(Scanner sc) {
+            this.sc = sc;
+        }
+
+    /**
+     * Metodo de inicio de la aplicacion la cual pide la cadena
+     * la convierte en un vector de caracteres
+     * busca y en cuentra la primera letra que se repite
+     * y la va comparando una a una con el vector de la cadena.
+     */
     
     public void inicio(){
         System.out.println("Ingrese la cadena: ");
@@ -89,7 +117,7 @@ public class Principal {
                     break bucle1;    
             }
     
-    }
+        }
     }
 }
     
