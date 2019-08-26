@@ -11,4 +11,11 @@ package com.mycompany.letraquenoserepite;
  */
 public class Principal {
     
+    
+    public void inicio(){
+    
+    
+    
+    }
+    
 }
