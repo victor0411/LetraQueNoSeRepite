@@ -45,7 +45,23 @@ public class Principal {
     }
     
     public void inicio(){
-    
+        System.out.println("Ingrese la cadena: ");
+        int lengarray, y = 1;
+        char norepi;
+        cadena = sc.nextLine();
+        caracter = cadena.toCharArray();
+        
+        
+         if(i>=caracter.length)
+                break bucle1;
+            lengarray = vector.size();
+            for(int k=0; k<lengarray;k++){                               
+                while(caracter[i]==vector.get(k)){
+                    i++;
+                    if(i>=caracter.length)
+                        break bucle1;
+                }
+            }
     
     }
     
